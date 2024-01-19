@@ -1,0 +1,227 @@
+/* import font */
+
+@font-face {
+    font-family: vazirNormal;
+    src: url('fonts/vaizr.eot');
+    src: url('fonts/vazir.eot?#iefix') format('embedded-opentype'), url('fonts/vazir.woff2') format('woff2'), url('fonts/vazir.woff') format('woff'), url('fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url('fonts/vazir-bold.eot');
+    src: url('fonts/vazir-bold.eot?#iefix') format('embedded-opentype'), url('fonts/vazir-bold.woff2') format('woff2'), url('fonts/vazir-bold.woff') format('woff'), url('fonts/vazir-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* css root */
+
+:root {
+
+    --var-color: #000000;
+
+}
+
+/* body style */
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+
+}
+
+
+#eyedropper-box {
+    direction: rtl;
+    width: 400px;
+    height: 270px;
+    background-color: #b3b3b3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 0 15px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+}
+
+/* color variable section */
+
+#eyedropper-box .color-box {
+    width: 40%;
+    height: 95%;
+    border-radius: 15px;
+    margin-left: 10px;
+    position: relative;
+
+}
+
+#eyedropper-box .color-box .eyedropper {
+    width: 100%;
+    height: 48%;
+    background-color: var(--var-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+#eyedropper-box .color-box .eyedropper svg {
+    width: 6 0%;
+    height: 60%;
+    filter: drop-shadow(7px 0px 10px #202020);
+
+}
+
+#eyedropper-box .color-box .eyedropper svg .var-color {
+    fill: var(--var-color);
+}
+
+#eyedropper-box .color-box .color-code {
+    width: 100%;
+    height: 48%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#eyedropper-box .color-box .color-code .copied {
+    margin: 45px 47px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: vazirNormal;
+    display: none;
+}
+
+#eyedropper-box .color-box .color-code .code {
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+#eyedropper-box .color-box .color-code .code span {
+    direction: ltr;
+    font-family: vazirNormal;
+    margin: 0 auto;
+}
+
+#eyedropper-box .color-box .color-code .code button {
+    position: absolute;
+    left: 0;
+    margin-left: 11px;
+    font-family: vazirNormal;
+    border: none;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+#eyedropper-box .color-box .color-code .code-convert {
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+}
+
+#eyedropper-box .color-box .color-code .code-convert button {
+    font-family: vazirNormal;
+    border: none;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* palette color section */
+
+#eyedropper-box .palette-color-box {
+    width: 60%;
+    height: 95%;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+#eyedropper-box .palette-color-box .title-palette-color-box {
+    background-color: #dbdbdb;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+
+}
+
+#eyedropper-box .palette-color-box .title-palette-color-box h4 {
+    font-family: vazirNormal;
+    color: #353535;
+}
+
+#eyedropper-box .palette-color-box .color-palettes {
+    background-color: #ffffff;
+    direction: ltr;
+    width: 100%;
+    height: 80%;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+#eyedropper-box .palette-color-box .color-palettes .color {
+    /* background-color: #ff0000; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+#eyedropper-box .palette-color-box .color-palettes .add-color {
+    background-color: rgb(219, 219, 219);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+#eyedropper-box .palette-color-box .color-palettes .add-color svg {
+    width: 70%;
+    height: 70%;
+
+
+}
+
+#eyedropper-box .palette-color-box .color-palettes .add-color .add-color-svg {
+    fill: var(--var-color);
+}
