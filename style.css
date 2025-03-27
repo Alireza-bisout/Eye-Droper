@@ -1,5 +1,4 @@
 /* import font */
-
 @font-face {
     font-family: vazirNormal;
     src: url('fonts/vaizr.eot');
@@ -12,12 +11,11 @@
     font-family: vazirBold;
     src: url('fonts/vazir-bold.eot');
     src: url('fonts/vazir-bold.eot?#iefix') format('embedded-opentype'), url('fonts/vazir-bold.woff2') format('woff2'), url('fonts/vazir-bold.woff') format('woff'), url('fonts/vazir-bold.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: bold;
     font-display: swap;
 }
 
 /* css root */
-
 :root {
 
     --var-color: #000000;
@@ -25,14 +23,12 @@
 }
 
 /* body style */
-
 body {
     margin: 0;
     padding: 0;
     direction: rtl;
 
 }
-
 
 #eyedropper-box {
     direction: rtl;
@@ -48,7 +44,6 @@ body {
 }
 
 /* color variable section */
-
 #eyedropper-box .color-box {
     width: 40%;
     height: 95%;
@@ -147,7 +142,6 @@ body {
 }
 
 /* palette color section */
-
 #eyedropper-box .palette-color-box {
     width: 60%;
     height: 95%;
@@ -187,15 +181,14 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    gap: 2px;
     justify-content: space-between;
     align-items: flex-start;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
-
 #eyedropper-box .palette-color-box .color-palettes .color {
-    /* background-color: #ff0000; */
     width: 40px;
     height: 40px;
     border-radius: 50%;

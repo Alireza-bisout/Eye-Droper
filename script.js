@@ -1,4 +1,4 @@
-// // Access
+// Access
 
 let eyedropperBox = document.querySelector('#eyedropper-box .eyedropper');
 let colorCode = document.querySelector('#eyedropper-box .color-code .code span');
@@ -68,4 +68,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 2000);
     });
 });
-
